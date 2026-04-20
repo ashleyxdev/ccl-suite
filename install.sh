@@ -1,45 +1,33 @@
 #!/usr/bin/env bash
 
 echo "================================================"
-echo "   Software Testing & Quality Assurance"
-echo "           Lab File Downloader"
+echo "        Cloud Computing Lab"
+echo "        Lab File Downloader"
 echo "================================================"
 echo ""
 
 # Base URL of your GitHub repo (raw content)
-REPO_BASE="https://raw.githubusercontent.com/ashleyxdev/stqa-suite/master"
+REPO_BASE="https://raw.githubusercontent.com/ashleyxdev/ccl-suite/main"
 
 # Parallel arrays: ids, names, types, sections
-IDS=(1 2 3 4 5 7 8 9 10 11 99 100)
+IDS=(1 6 7 8 9 99)
 
 NAMES=(
-    "1-gmail-login-test-suite.xlsx"
-    "2-two-website-test-suite.xlsx"
-    "3-social-media-app-test-suite.xlsx"
-    "4-defect-report.xlsx"
-    "5-LoginTest.java"
-    "7-update-student-records.py"
-    "8-select-student-marks.py"
-    "9-CountObjects.java"
-    "10-CountListItems.java"
-    "11-CountCheckboxes.java"
-    "selenium-setup-guide.md"
-    "pom.xml"
+    "1-linux-cmds.md"
+    "6-s3-bucket.md"
+    "7-terraform.md"
+    "8-ansible.md"
+    "9-docker.md"
+    "index.html"
 )
 
 TYPES=(
-    "Excel"
-    "Excel"
-    "Excel"
-    "Excel"
-    "Java"
-    "Python"
-    "Python"
-    "Java"
-    "Java"
-    "Java"
     "Markdown"
-    "XML"
+    "Markdown"
+    "Markdown"
+    "Markdown"
+    "Markdown"
+    "HTML"
 )
 
 SECTIONS=(
@@ -48,13 +36,7 @@ SECTIONS=(
     "Practical"
     "Practical"
     "Practical"
-    "Practical"
-    "Practical"
-    "Practical"
-    "Practical"
-    "Practical"
-    "Setup"
-    "Setup"
+    "Resource"
 )
 
 # Display: Lab Practicals
@@ -68,11 +50,11 @@ done
 
 echo ""
 
-# Display: Helper / Setup Files
-echo "Helper / Setup Files:"
-echo "---------------------"
+# Display: Resource Files
+echo "Resource Files:"
+echo "---------------"
 for i in "${!IDS[@]}"; do
-    if [[ "${SECTIONS[$i]}" == "Setup" ]]; then
+    if [[ "${SECTIONS[$i]}" == "Resource" ]]; then
         echo "  ${IDS[$i]}. [${TYPES[$i]}] ${NAMES[$i]}"
     fi
 done
