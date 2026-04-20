@@ -10,15 +10,18 @@ echo ""
 REPO_BASE="https://raw.githubusercontent.com/ashleyxdev/ccl-suite/main"
 
 # Parallel arrays: ids, names, types, sections
-IDS=(1 6 7 8 9 99)
+IDS=(1 4 6 7 8 9 10 99 100)
 
 NAMES=(
     "1-linux-cmds.md"
+    "4-ec2-server.md"
     "6-s3-bucket.md"
     "7-terraform.md"
     "8-ansible.md"
     "9-docker.md"
+    "10-file-transfer.md"
     "index.html"
+    "hello-world-key.pem"
 )
 
 TYPES=(
@@ -27,7 +30,10 @@ TYPES=(
     "Markdown"
     "Markdown"
     "Markdown"
+    "Markdown"
+    "Markdown"
     "HTML"
+    "PEM"
 )
 
 SECTIONS=(
@@ -36,6 +42,9 @@ SECTIONS=(
     "Practical"
     "Practical"
     "Practical"
+    "Practical"
+    "Practical"
+    "Resource"
     "Resource"
 )
 

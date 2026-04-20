@@ -10,12 +10,15 @@ $repoBase = "https://raw.githubusercontent.com/ashleyxdev/ccl-suite/main"
 # ID for practicals = their filename prefix number
 # ID for resource files = 99, 100, ... (to avoid conflict with future practicals)
 $labFiles = @(
-    @{ id = 1;   name = "1-linux-cmds.md";   type = "Markdown"; section = "Practical" },
-    @{ id = 6;   name = "6-s3-bucket.md";    type = "Markdown"; section = "Practical" },
-    @{ id = 7;   name = "7-terraform.md";    type = "Markdown"; section = "Practical" },
-    @{ id = 8;   name = "8-ansible.md";      type = "Markdown"; section = "Practical" },
-    @{ id = 9;   name = "9-docker.md";       type = "Markdown"; section = "Practical" },
-    @{ id = 99;  name = "index.html";        type = "HTML";     section = "Resource"  }
+    @{ id = 1;   name = "1-linux-cmds.md";      type = "Markdown"; section = "Practical" },
+    @{ id = 4;   name = "4-ec2-server.md";      type = "Markdown"; section = "Practical" },
+    @{ id = 6;   name = "6-s3-bucket.md";       type = "Markdown"; section = "Practical" },
+    @{ id = 7;   name = "7-terraform.md";       type = "Markdown"; section = "Practical" },
+    @{ id = 8;   name = "8-ansible.md";         type = "Markdown"; section = "Practical" },
+    @{ id = 9;   name = "9-docker.md";          type = "Markdown"; section = "Practical" },
+    @{ id = 10;  name = "10-file-transfer.md";  type = "Markdown"; section = "Practical" },
+    @{ id = 99;  name = "index.html";           type = "HTML";     section = "Resource"  },
+    @{ id = 100; name = "hello-world-key.pem";  type = "PEM";      section = "Resource"  }
 )
 
 # Display: Lab Practicals
